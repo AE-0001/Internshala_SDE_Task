@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings Details</title>
+    
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<h2>View booked cars</h2>
+<form action="view_bookings.php" method="GET">
+    <label for="car_model">Car Model:</label>
+    <select name="car_model" id="car_model" required>
+            <option value="Toyota Corolla">Toyota Corolla</option>
+            <option value="Honda Civic">Honda Civic</option>
+            <option value="Focus">Focus</option>
+            <option value="Mali">Malibu</option>
+            <option value="Jetta">Jetta</option>
+            <!-- Add more options for other car models -->
+        </select>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
