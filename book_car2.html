@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental System - Book a Car</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <h1>Book a Car</h1>
+    <form action="book_car.php" method="post" id="car-booking-form">
+        <label for="customer_name">Your Name:</label>
+        <input type="text" name="customer_name" id="customer_name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="driver_license">Driver's License Number:</label>
+        <input type="text" name="driver_license" id="driver_license" required>
+
+        <label for="car_model">Car Model:</label>
+        <select name="car_model" id="car_model" required>
+            <option value="Toyota Corolla">Toyota Corolla</option>
+            <option value="Honda Civic">Honda Civic</option>
+            <option value="Focus">Focus</option>
+            <option value="Mali">Malibu</option>
+            <option value="Jetta">Jetta</option>
+            <!-- Add more options for other car models -->
+        </select>
+
+        <label for="booking_date">Booking Date:</label>
+        <input type="date" name="booking_date" id="booking_date" required>
+
+        <label for="ending_date">Ending Date:</label>
+        <input type="date" name="ending_date" id="ending_date" required>
+
+        <button type="submit">Rent Car</button>
+    </form>
+
+    <script src="book_car.js"></script>
+</body>
+</html>
