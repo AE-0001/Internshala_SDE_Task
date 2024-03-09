@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental System - Car Rental Agency Registration</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <h1>Register as a Car Rental Agency</h1>
+    <form action="agency_register.php" method="post" id="agency-registration-form">
+        <label for="agency_name">Agency Name:</label>
+        <input type="text" name="agency_name" id="agency_name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" name="confirm_password" id="confirm_password" required>
+
+        <label for="contact_number">Contact Number:</label>
+        <input type="tel" name="contact_number" id="contact_number" required>
+
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" required></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
